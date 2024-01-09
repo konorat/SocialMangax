@@ -4,7 +4,7 @@ public class MangaDto {
     private Integer id;
     private String name;
     private String vol;
-    private String author;
+    private Integer idAuthor;
     private Integer userId;
 
     public Integer getId() {
@@ -25,20 +25,18 @@ public class MangaDto {
     public void setVol(String vol) {
         this.vol = vol;
     }
-    public String getAuthor() {
-        return author;
-    }
-    public void setAuthor(String author) {
-        this.author = author;
-    }
+
     public Integer getUserId() {
         return userId;
     }
     public void setUserId(Integer userId) {
         this.userId = userId;
     }
-
+    public Integer getIdAuthor() {
+        return idAuthor;
+    }
+    public void setIdAuthor(Integer idAuthor) {
+        this.idAuthor = idAuthor;
+    }
     
-
-
 }

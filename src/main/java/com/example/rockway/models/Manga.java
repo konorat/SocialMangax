@@ -19,7 +19,9 @@ public class Manga {
 
     private String vol;
 
-    private String author;
+    @JsonBackReference
+    @ManyToOne
+    private Author author;
 
     @JsonBackReference
     @ManyToOne
@@ -49,20 +51,20 @@ public class Manga {
         this.vol = vol;
     }
 
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
     public User getUser() {
         return user;
     }
     
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(Author author) {
+        this.author = author;
     }
 
 }
